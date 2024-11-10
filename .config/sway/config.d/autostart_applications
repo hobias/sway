@@ -1,6 +1,3 @@
-# Apply xed settings with self-destructing script
-exec ~/.config/sway/scripts/xed_setup.sh
-
 # Auth with polkit-gnome:
 exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 
@@ -12,7 +9,7 @@ exec hash dbus-update-activation-environment 2>/dev/null && \
      dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
 
 # Desktop notifications
-exec mako
+exec swaync
 
 # Start foot server
 exec_always --no-startup-id foot --server
